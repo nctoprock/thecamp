@@ -92,6 +92,8 @@ def webhook():
 
 @app.route("/alerts", methods=["GET"])
 def alerts():
+    if not _check_secret():
+        return jsonify({"error": "unauthorized"}), 401
     return jsonify(list(_alerts))
 
 

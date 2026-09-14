@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@Home Team — Executive Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#182543;
+    --navy-deep:#0f1830;
+    --paper:#f4f5f7;
+    --card:#ffffff;
+    --ink:#191d26;
+    --sub:#5c6373;
+    --line:#e2e4ea;
+    --teal:#1f6f5c;
+    --teal-soft:#d9ece6;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; background:var(--paper); }
+
+  body{
+    font-family:"IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+    color:var(--ink);
+    padding:40px 20px 80px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .sheet{
+    width:100%;
+    max-width:840px;
+  }
+
+  /* ---------- Header band ---------- */
+  .band{
+    background:var(--navy);
+    color:#fff;
+    padding:40px 44px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:24px;
+    align-items:end;
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal-soft);
+    margin:0 0 14px;
+  }
+  h1{
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight:600;
+    font-size:clamp(30px,4.6vw,42px);
+    line-height:1.06;
+    letter-spacing:-.01em;
+    margin:0;
+    text-wrap:balance;
+    max-width:16ch;
+  }
+  .team-id{
+    text-align:right;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:rgba(255,255,255,.65);
+    line-height:1.6;
+  }
+  .team-id strong{
+    display:block;
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-size:17px;
+    font-weight:600;
+    color:#fff;
+  }
+
+  /* ---------- Stat strip ---------- */
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:var(--navy-deep);
+  }
+  .stat{
+    padding:20px 18px;
+    border-left:1px solid rgba(255,255,255,.12);
+  }
+  .stat:first-child{ border-left:none; }
+  .stat b{
+    display:block;
+    font-family:"IBM Plex Mono", monospace;
+    font-variant-numeric:tabular-nums;
+    font-size:21px;
+    font-weight:600;
+    color:#fff;
+  }
+  .stat span{
+    display:block;
+    font-size:10.5px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.55);
+    margin-top:4px;
+  }
+
+  /* ---------- Body grid ---------- */
+  main{
+    background:var(--card);
+    padding:40px 44px;
+    display:grid;
+    gap:36px;
+  }
+
+  .tagline{
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight:500;
+    font-size:19px;
+    color:var(--navy);
+    margin:0;
+    padding-bottom:28px;
+    border-bottom:1px solid var(--line);
+    text-wrap:balance;
+  }
+
+  .section-label{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--teal);
+    margin:0 0 14px;
+  }
+
+  .bio p{
+    font-size:15px;
+    line-height:1.7;
+    max-width:64ch;
+    color:#333a47;
+    margin:0 0 12px;
+  }
+  .bio p:last-child{ margin-bottom:0; }
+
+  .two-col{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:36px;
+  }
+
+  .tag-cloud{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tag{
+    background:var(--teal-soft);
+    color:var(--teal);
+    font-size:13px;
+    font-weight:500;
+    padding:6px 12px;
+    border-radius:3px;
+  }
+
+  .cred-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .cred{
+    background:var(--card);
+    padding:16px 18px;
+  }
+  .cred b{
+    display:block;
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-size:18px;
+    color:var(--navy);
+  }
+  .cred span{
+    display:block;
+    font-size:12px;
+    color:var(--sub);
+    margin-top:3px;
+  }
+
+  .service-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .service{
+    background:var(--card);
+    padding:22px 24px;
+  }
+  .service .num{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    font-weight:600;
+    color:var(--teal);
+    display:block;
+    margin-bottom:8px;
+  }
+  .service h3{
+    margin:0 0 6px;
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight:600;
+    font-size:16px;
+    color:var(--navy);
+  }
+  .service p{
+    margin:0;
+    font-size:13.5px;
+    line-height:1.6;
+    color:var(--sub);
+  }
+
+  /* ---------- CTA ---------- */
+  .cta{
+    background:var(--navy);
+    color:#fff;
+    padding:36px 44px 44px;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:24px;
+    align-items:center;
+  }
+  .cta h2{
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight:600;
+    font-size:22px;
+    margin:0 0 6px;
+    text-wrap:balance;
+  }
+  .cta p{
+    margin:0;
+    font-size:13.5px;
+    color:rgba(255,255,255,.65);
+  }
+  .contact-block{
+    text-align:right;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:13px;
+    line-height:1.9;
+    color:var(--teal-soft);
+  }
+  .contact-block strong{ color:#fff; font-weight:600; }
+
+  @media (max-width:640px){
+    .band{ grid-template-columns:1fr; padding:32px 26px; }
+    .team-id{ text-align:left; }
+    .stats{ grid-template-columns:repeat(2,1fr); }
+    .stat:nth-child(3){ border-left:none; }
+    main{ padding:32px 26px; gap:28px; }
+    .two-col, .cred-grid, .service-grid{ grid-template-columns:1fr; }
+    .cta{ grid-template-columns:1fr; padding:28px 26px 36px; }
+    .contact-block{ text-align:left; }
+  }
+
+  @media print{
+    body{ padding:0; background:var(--paper); }
+    .sheet{ max-width:none; }
+    @page{ margin:0.5in; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="band">
+    <div>
+      <p class="eyebrow">Client Introduction</p>
+      <h1>The @Home Team, led by Lori</h1>
+    </div>
+    <div class="team-id">
+      <strong>Keller Williams Palmetto</strong>
+      South Carolina Lowcountry<br>
+      Managing Broker
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>30+</b><span>Years in the Industry</span></div>
+    <div class="stat"><b>04</b><span>Professional Designations</span></div>
+    <div class="stat"><b>02</b><span>States Licensed &amp; Trained In</span></div>
+    <div class="stat"><b>KW</b><span>Palmetto Brokerage</span></div>
+  </div>
+
+  <main>
+    <p class="tagline">"Real estate guided by experience, driven by strategy, and rooted in trust."</p>
+
+    <div class="two-col">
+      <div class="bio">
+        <p class="section-label">Background</p>
+        <p>Lori is the CEO &amp; Founder of the @Home Team, Managing Broker at Keller Williams Palmetto, and a licensed Real Estate Instructor. Her path started in Fort Lauderdale, Florida — a Liberal Arts degree from Broward College, then years in property management and real estate advertising before she moved into sales.</p>
+        <p>She's since built her career in the South Carolina market, with a professional network that runs through clients, investors, builders, and community leaders across the region.</p>
+      </div>
+      <div>
+        <p class="section-label">Specialty Areas</p>
+        <div class="tag-cloud">
+          <span class="tag">Residential</span>
+          <span class="tag">Commercial</span>
+          <span class="tag">New Construction</span>
+          <span class="tag">Luxury Homes</span>
+          <span class="tag">Waterfront</span>
+          <span class="tag">Relocation</span>
+          <span class="tag">Land</span>
+          <span class="tag">Development</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label">Credentials</p>
+      <div class="cred-grid">
+        <div class="cred"><b>SRS</b><span>Seller Representative Specialist</span></div>
+        <div class="cred"><b>ABR</b><span>Accredited Buyer's Representative</span></div>
+        <div class="cred"><b>PSA</b><span>Pricing Strategy Advisor</span></div>
+        <div class="cred"><b>RENE</b><span>Real Estate Negotiation Expert</span></div>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-label">What Our Team Does For You</p>
+      <div class="service-grid">
+        <div class="service">
+          <span class="num">01</span>
+          <h3>Goal-first strategy</h3>
+          <p>We start with what you're trying to accomplish, then build the plan around it.</p>
+        </div>
+        <div class="service">
+          <span class="num">02</span>
+          <h3>Sharp pricing &amp; positioning</h3>
+          <p>PSA-backed market analysis, so listings sell and offers are grounded in real data.</p>
+        </div>
+        <div class="service">
+          <span class="num">03</span>
+          <h3>Skilled negotiation</h3>
+          <p>RENE-trained representation on every offer, inspection, and counter.</p>
+        </div>
+        <div class="service">
+          <span class="num">04</span>
+          <h3>A network that opens doors</h3>
+          <p>Direct relationships with builders, investors, and community leaders across the Lowcountry.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="cta">
+    <div>
+      <h2>Let's get your house sold.</h2>
+      <p>Reach out to the @Home Team to start the conversation.</p>
+    </div>
+    <div class="contact-block">
+      <strong>[Team Phone Number]</strong><br>
+      [Team Email Address]<br>
+      [Team Website]
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

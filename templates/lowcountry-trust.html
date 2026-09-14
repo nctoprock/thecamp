@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>@Home Team — Client Introduction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#20291f;
+    --paper:#f2ecdb;
+    --paper-raised:#fbf8ef;
+    --deep:#26463a;
+    --deep-ink:#173028;
+    --accent:#8f6a2f;
+    --accent-soft:#e4d3a8;
+    --line:#d6c89a;
+    --white:#ffffff;
+    --sub:#4c5647;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    background:var(--paper);
+  }
+
+  body{
+    font-family:"Public Sans", -apple-system, "Segoe UI", sans-serif;
+    color:var(--ink);
+    padding:48px 20px 72px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .sheet{
+    width:100%;
+    max-width:780px;
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    box-shadow:0 1px 0 var(--line);
+  }
+
+  /* ---------- Header ---------- */
+  .masthead{
+    padding:44px 56px 32px;
+    border-bottom:2px solid var(--deep);
+  }
+  .mark-row{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:26px;
+  }
+  .mark{
+    width:52px; height:52px;
+    border-radius:50%;
+    background:var(--deep);
+    color:var(--paper-raised);
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Fraunces", serif;
+    font-weight:600;
+    font-size:20px;
+    flex-shrink:0;
+  }
+  .wordmark{
+    font-family:"JetBrains Mono", monospace;
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--deep);
+  }
+  .wordmark span{ color:var(--accent); }
+  .office{
+    font-size:12px;
+    color:var(--sub);
+    margin-top:3px;
+  }
+  h1{
+    font-family:"Fraunces", serif;
+    font-weight:500;
+    font-size:clamp(28px,4.4vw,40px);
+    line-height:1.12;
+    letter-spacing:-.01em;
+    margin:0 0 12px;
+    text-wrap:balance;
+    max-width:22ch;
+  }
+  .tagline{
+    font-family:"Fraunces", serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:18px;
+    color:var(--deep);
+    margin:0;
+    text-wrap:balance;
+  }
+
+  /* ---------- Stat row ---------- */
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-bottom:1px solid var(--line);
+  }
+  .stat{
+    padding:22px 18px;
+    border-left:1px solid var(--line);
+    text-align:center;
+  }
+  .stat:first-child{ border-left:none; }
+  .stat b{
+    display:block;
+    font-family:"JetBrains Mono", monospace;
+    font-variant-numeric:tabular-nums;
+    font-size:24px;
+    font-weight:600;
+    color:var(--deep);
+  }
+  .stat span{
+    display:block;
+    font-size:11px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--sub);
+    margin-top:5px;
+  }
+
+  /* ---------- Sections ---------- */
+  section{
+    padding:34px 56px;
+    border-bottom:1px solid var(--line);
+  }
+  section:last-of-type{ border-bottom:none; }
+
+  .eyebrow{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+
+  .bio p{
+    font-size:15.5px;
+    line-height:1.7;
+    max-width:62ch;
+    margin:0 0 14px;
+    color:#2c352a;
+  }
+  .bio p:last-child{ margin-bottom:0; }
+
+  .grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px 40px;
+  }
+
+  .expertise-list{
+    list-style:none;
+    margin:0; padding:0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 24px;
+  }
+  .expertise-list li{
+    font-size:14.5px;
+    padding-left:18px;
+    position:relative;
+    line-height:1.5;
+  }
+  .expertise-list li::before{
+    content:"";
+    position:absolute;
+    left:0; top:.6em;
+    width:7px; height:7px;
+    background:var(--accent);
+    border-radius:50%;
+  }
+
+  .designations{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .badge{
+    border:1px solid var(--deep);
+    color:var(--deep);
+    font-family:"JetBrains Mono", monospace;
+    font-weight:600;
+    font-size:12px;
+    letter-spacing:.04em;
+    padding:8px 12px;
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+  }
+  .badge em{
+    font-family:"Public Sans", sans-serif;
+    font-style:normal;
+    font-weight:400;
+    font-size:12.5px;
+    color:var(--sub);
+    white-space:nowrap;
+  }
+
+  .service-list{
+    list-style:none;
+    margin:0; padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  .service-list li{
+    display:grid;
+    grid-template-columns:26px 1fr;
+    gap:14px;
+    align-items:start;
+  }
+  .service-list .num{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    color:var(--accent);
+    font-weight:600;
+    padding-top:2px;
+  }
+  .service-list h3{
+    margin:0 0 4px;
+    font-family:"Fraunces", serif;
+    font-weight:600;
+    font-size:16px;
+  }
+  .service-list p{
+    margin:0;
+    font-size:14px;
+    line-height:1.6;
+    color:var(--sub);
+    max-width:52ch;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta{
+    background:var(--deep);
+    color:var(--paper);
+    padding:40px 56px 48px;
+  }
+  .cta .eyebrow{ color:var(--accent-soft); }
+  .cta h2{
+    font-family:"Fraunces", serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:24px;
+    margin:0 0 20px;
+    max-width:26ch;
+    text-wrap:balance;
+    color:var(--white);
+  }
+  .contact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px 32px;
+  }
+  .contact-grid div{
+    border-top:1px solid rgba(242,236,219,.25);
+    padding-top:10px;
+  }
+  .contact-grid span{
+    display:block;
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--accent-soft);
+    margin-bottom:4px;
+  }
+  .contact-grid strong{
+    font-weight:600;
+    font-size:15px;
+    color:var(--white);
+  }
+
+  @media (max-width:620px){
+    .masthead, section, .cta{ padding-left:26px; padding-right:26px; }
+    .stats{ grid-template-columns:repeat(2,1fr); }
+    .stat:nth-child(3){ border-left:none; }
+    .grid-2, .expertise-list, .contact-grid{ grid-template-columns:1fr; }
+  }
+
+  @media print{
+    body{ padding:0; background:var(--paper); }
+    .sheet{ border:none; box-shadow:none; max-width:none; }
+    @page{ margin:0.5in; }
+  }
+</style>
+</head>
+<body>
+<article class="sheet">
+
+  <header class="masthead">
+    <div class="mark-row">
+      <div class="mark">@H</div>
+      <div>
+        <div class="wordmark">@HOME TEAM <span>· REAL ESTATE</span></div>
+        <div class="office">Keller Williams Palmetto — South Carolina Lowcountry</div>
+      </div>
+    </div>
+    <h1>Meet the team behind your next move.</h1>
+    <p class="tagline">Real estate guided by experience, driven by strategy, and rooted in trust.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>30+</b><span>Years Experience</span></div>
+    <div class="stat"><b>4</b><span>Pro Designations</span></div>
+    <div class="stat"><b>SC</b><span>Lowcountry Market</span></div>
+    <div class="stat"><b>KW</b><span>Palmetto Brokerage</span></div>
+  </div>
+
+  <section class="bio">
+    <p class="eyebrow">About Lori</p>
+    <p>Lori is the CEO &amp; Founder of the @Home Team, a Managing Broker at Keller Williams Palmetto, and a licensed Real Estate Instructor — with over 30 years across sales, marketing, and training. Her career began in Fort Lauderdale, Florida, where she earned her degree in Liberal Arts from Broward College and cut her teeth in property management and real estate advertising before moving into sales.</p>
+    <p>Today, deeply rooted in the South Carolina market, Lori has built a professional network spanning clients, investors, builders, and community leaders — the kind of relationships that turn a transaction into a long-term advantage for the people she represents.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Where We Specialize</p>
+    <ul class="expertise-list">
+      <li>Residential resale &amp; relocation</li>
+      <li>New construction</li>
+      <li>Luxury &amp; waterfront homes</li>
+      <li>Land &amp; development</li>
+      <li>Commercial properties</li>
+      <li>Investor &amp; builder partnerships</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow">Credentials</p>
+    <div class="designations">
+      <div class="badge">SRS <em>Seller Representative Specialist</em></div>
+      <div class="badge">ABR <em>Accredited Buyer's Representative</em></div>
+      <div class="badge">PSA <em>Pricing Strategy Advisor</em></div>
+      <div class="badge">RENE <em>Real Estate Negotiation Expert</em></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">What Our Team Does For You</p>
+    <ul class="service-list">
+      <li>
+        <span class="num">01</span>
+        <div>
+          <h3>A strategy built around your goals</h3>
+          <p>Every plan starts with what you're actually trying to accomplish — not a one-size-fits-all playbook.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div>
+          <h3>Pricing &amp; positioning, done right</h3>
+          <p>PSA-level market analysis so a listing is priced to sell and an offer is grounded in real data.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div>
+          <h3>Negotiation that protects your outcome</h3>
+          <p>RENE-trained representation at the table, on every offer, inspection, and counter.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">04</span>
+        <div>
+          <h3>A network you can't build on your own</h3>
+          <p>Direct access to trusted builders, investors, and community leaders across the Lowcountry.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <p class="eyebrow">Let's Get These Houses Sold</p>
+    <h2>Ready to talk through your next move?</h2>
+    <div class="contact-grid">
+      <div><span>Phone</span><strong>[Team Phone Number]</strong></div>
+      <div><span>Email</span><strong>[Team Email Address]</strong></div>
+      <div><span>Website</span><strong>[Team Website]</strong></div>
+      <div><span>Office</span><strong>Keller Williams Palmetto</strong></div>
+    </div>
+  </div>
+
+</article>
+</body>
+</html>

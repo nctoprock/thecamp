@@ -23,6 +23,7 @@ AGENTS = [
     ("Marcus Lominick", "mlominick@kwcommercial.com"),
     ("Mary Elizabeth Young", "myoung@kwcommercial.com"),
     ("Jayan Abraham", "jayanabraham@kw.com"),
+    ("Nicholas Carnes", "ncarnes@kw.com"),
 ]
 FIRST_WEEK = dt.date(2026, 9, 28)  # Monday
 LAST_WEEK = dt.date(2027, 12, 27)

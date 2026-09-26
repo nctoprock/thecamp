@@ -15,7 +15,15 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
 NUM_AGENTS = 7
-OWNER_EMAIL = "nicholascarnes45@gmail.com"
+OWNER_EMAIL = "ncarnes@kw.com"
+# (name, email) — empty slots stay as "Agent N" until filled in on Settings
+AGENTS = [
+    ("Gabrielle Gillie", "gabeg@kwcommercial.com"),
+    ("Dillon", "dillon2403@gmail.com"),
+    ("Marcus Lominick", "mlominick@kwcommercial.com"),
+    ("Mary Elizabeth Young", "myoung@kwcommercial.com"),
+    ("Jayan Abraham", "jayanabraham@kw.com"),
+]
 FIRST_WEEK = dt.date(2026, 9, 28)  # Monday
 LAST_WEEK = dt.date(2027, 12, 27)
 Q4_START, Q4_END = dt.date(2026, 10, 1), dt.date(2026, 12, 31)
@@ -45,12 +53,20 @@ SETTINGS = "Settings"
 AGENT_ROW0 = 14  # first agent row on Settings
 
 
+def agent_label(i):
+    return AGENTS[i - 1][0] if i <= len(AGENTS) else f"Agent {i}"
+
+
+def agent_email(i):
+    return AGENTS[i - 1][1] if i <= len(AGENTS) else ""
+
+
 def scorecard_name(i):
-    return f"Agent {i} Scorecard"
+    return f"{agent_label(i)} Scorecard"
 
 
 def assessment_name(i):
-    return f"Agent {i} Assessment"
+    return f"{agent_label(i)} Assessment"
 
 
 def q(name):
@@ -645,7 +661,8 @@ def build_settings(ws):
                                     "Market Center"])
     for i in range(1, NUM_AGENTS + 1):
         r = AGENT_ROW0 + i - 1
-        vals = [i, "", "", scorecard_name(i), assessment_name(i), ""]
+        vals = [i, agent_label(i) if i <= len(AGENTS) else "", agent_email(i), scorecard_name(i),
+                assessment_name(i), ""]
         for j, v in enumerate(vals):
             c = ws.cell(r, j + 1, v)
             c.border = BOX
@@ -746,7 +763,7 @@ def build_review(ws):
     title(ws, "Praedium Development Review — Owner Only", NUM_AGENTS + 1,
           "Complete after meeting with each agent. Scores 1–5. This file is separate from the shared Score Card "
           "so agents never see it — do not share it.")
-    header_row(ws, 4, ["Development Area"] + [f"Agent {i} (type name)" for i in range(1, NUM_AGENTS + 1)])
+    header_row(ws, 4, ["Development Area"] + [agent_label(i) for i in range(1, NUM_AGENTS + 1)])
     areas = ["Available Time / Commitment", "Daily Structure", "Prospecting Consistency", "Pipeline Development",
              "Sphere / Relationship Development", "Market Center Development", "Market / Product Focus",
              "CRE Knowledge", "Organization / Follow-Through", "Coachability / Engagement"]

@@ -22,11 +22,12 @@ A Google Sheet for 7 agents. Each agent fills in a one-time **Growth Assessment*
 1. **Upload:** In Google Drive, go to New → File upload and pick `Praedium_Agent_Score_Card.xlsx`. Open it and choose **File → Save as Google Sheets**. Work in the Google Sheets copy from here on.
 2. **Settings tab:** The 6 people (5 agents plus you) and their emails are already filled in, and the team summary goes to ncarnes@kw.com. Add Market Centers, and use the open 7th slot for anyone else.
 3. **Script:** Go to **Extensions → Apps Script**. Delete the starter code, paste all of `Code.gs`, and save. Under Project Settings (gear icon), set the time zone to yours. Reload the sheet, and a **Score Card** menu appears.
-4. From the **Score Card** menu, run in order. Google will ask you to authorize the script the first time.
-   1. **Rename tabs from Settings**. "Agent 1 Scorecard" becomes "Jane Smith Scorecard", and so on.
-   2. **Share & protect tabs**. This shares the sheet with each agent, and Google emails them an invite. Each agent can edit only the yellow cells on their own tabs.
-   3. **Install weekly email triggers**
-5. Optional: run **Preview: send me one agent reminder** to see what agents will receive.
+4. From the **Score Card** menu, run **LAUNCH: share + send each agent their personal link**. Google will ask you to authorize the script the first time. In one step, it:
+   - shares the sheet and locks each person to their own tabs
+   - turns on the weekly reminder and summary emails
+   - emails each person links that open directly to **their** Assessment and Scorecard
+
+   Do this from the Google account that owns the sheet (ncarnes@kw.com).
 
 If you change the schedule on Settings later, run **Install weekly email triggers** again.
 

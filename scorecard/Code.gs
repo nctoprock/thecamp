@@ -33,6 +33,8 @@ var NAVY = '#1F3A5F', GOLD = '#C9A227';
 
 function onOpen() {
   SpreadsheetApp.getUi().createMenu('Score Card')
+    .addItem('LAUNCH: share + send each agent their personal link', 'launch')
+    .addSeparator()
     .addItem('1. Rename tabs from Settings', 'renameTabsFromSettings')
     .addItem('2. Share & protect tabs', 'shareAndProtect')
     .addItem('3. Install weekly email triggers', 'installTriggers')
@@ -125,7 +127,9 @@ function shareAndProtect() {
   if (!list.length) { toast_('Add agent emails on Settings first.'); return; }
   var me = Session.getEffectiveUser().getEmail();
 
-  list.forEach(function (a) { ss.addEditor(a.email); });
+  list.forEach(function (a) {
+    if (a.email.toLowerCase() !== me.toLowerCase()) ss.addEditor(a.email);
+  });
 
   // Clear old protections this script created
   ss.getProtections(SpreadsheetApp.ProtectionType.SHEET).concat(ss.getProtections(SpreadsheetApp.ProtectionType.RANGE))
@@ -166,6 +170,52 @@ function shareAndProtect() {
     }
   });
   toast_('Shared with ' + list.length + ' agent(s) and protected.');
+}
+
+/* --------------------------------------------------------------- launch */
+
+/** One click: share + protect, install weekly triggers, email each agent their own links. */
+function launch() {
+  var ui = SpreadsheetApp.getUi();
+  var list = activeAgents_();
+  var ok = ui.alert('Launch Score Card',
+    'This will share the sheet with ' + list.length + ' people, lock each person to their own tabs, turn on the weekly emails, ' +
+    'and send each person a welcome email with a link to THEIR scorecard:\n\n' +
+    list.map(function (a) { return '• ' + a.name + ' <' + a.email + '>'; }).join('\n') + '\n\nContinue?',
+    ui.ButtonSet.YES_NO);
+  if (ok !== ui.Button.YES) return;
+  shareAndProtect();
+  installTriggers();
+  sendWelcomeEmails_();
+  ui.alert('Done — welcome emails sent to ' + list.length + ' people. Weekly reminders are on.');
+}
+
+function sendWelcomeEmails_() {
+  var c = cfg_(), ss = c.ss;
+  activeAgents_().forEach(function (a) {
+    var sc = ss.getSheetByName(a.scorecardTab), as = ss.getSheetByName(a.assessmentTab);
+    var scUrl = ss.getUrl() + '#gid=' + (sc ? sc.getSheetId() : '');
+    var asUrl = ss.getUrl() + '#gid=' + (as ? as.getSheetId() : '');
+    var first = a.name.split(' ')[0];
+    var html = wrap_(c, 'Hi ' + esc_(first) + ',',
+      '<p>I\'m rolling out the <b>Praedium Agent Score Card</b> — a tool to help each of us stay accountable, see where our time ' +
+      'is going, and make sure I\'m giving you the right support to grow your commercial business.</p>' +
+      '<p><b>This is not a report card.</b> There are no wrong answers, and estimates are completely fine.</p>' +
+      '<p>These links open directly to <b>your</b> tabs — bookmark them:</p>' +
+      '<p><b>1. Your Growth Assessment (one time)</b> — a snapshot of your business today. Please complete it before our next meeting. ' +
+      'Your Q4 goals in Section 13 automatically feed your progress tracker.</p>' +
+      button_(asUrl, 'Open my Assessment') +
+      '<p><b>2. Your Weekly Scorecard</b> — one row per week. Please update your row by end of day every Friday (about 5 minutes).</p>' +
+      button_(scUrl, 'Open my Weekly Scorecard') +
+      '<ul style="font-size:13px"><li>Only fill in the <b>yellow cells</b> — everything else calculates automatically.</li>' +
+      '<li>You can only edit your own tabs, so you can\'t break anyone else\'s.</li>' +
+      '<li>You\'ll get a reminder each Friday with a direct link to your scorecard.</li>' +
+      '<li>See the <b>Start Here</b> tab for what counts in each column.</li></ul>' +
+      '<p style="font-size:13px">If a link asks you to request access, make sure you\'re signed in to Google as <b>' + esc_(a.email) + '</b>.</p>' +
+      '<p>Questions? Reach out anytime. Looking forward to seeing everyone\'s progress this quarter.</p>');
+    MailApp.sendEmail({ to: a.email, subject: 'Your Praedium Agent Score Card — personal links inside',
+      htmlBody: html, name: c.ownerName, replyTo: c.ownerEmail });
+  });
 }
 
 /* ------------------------------------------------------------- triggers */

@@ -50,6 +50,25 @@ Where the land values come from:
 
 **Our fee, for reference:** a 5-year lease at $3,500/mo with 3% increases is about $223K of total rent. At 6% commission that's about $13.4K.
 
+## Public-records follow-up (2026-09-28)
+
+Direct fetches to the county land records and GIS, LoopNet, Zillow and Otter's site are blocked from this research environment. What's below comes from search-result snippets.
+
+| # | Question | What we found | Status |
+|---|---|---|---|
+| 1 | Frontage on SC-544? | Access to Sun Light Dr is **from SC-544 onto Dick Pond Rd, then onto Sun Light Dr**. 100 (Otter Self Storage) and 120 (Grassie Granite) sit between the subject and the corner. The listing's "along Hwy 544" is probably visibility, not road frontage | **Likely no direct 544 frontage.** Check the plat |
+| 2 | HC/CFA split | The county card lists it as "a portion of Tract B", which suggests the lot came from a larger subdivided tract. Boundary line not found. Horry County retired CFA for new rezonings but it still applies to existing parcels | Open. Need GIS zoning layer |
+| 3 | Surface | Not found | Open. Site visit |
+| 4 | Permits / power | Not found. **Note:** HC zoning requires outdoor storage to be screened by a **fully opaque fence or wall at least 6 ft tall**. If the current fence is chain-link, a yard or storage tenant would need slats or new fencing | Open |
+| 5 | Price paid / taxes | Owner of record: **CDM LAND LLC, 36 Ferebee Ct, Bluffton, SC 29910** (PIN 44001020052, TMS 1790002083). Sold around 2022–23 under MLS 2219477; price not found | Open. County card / Register of Deeds |
+| 6 | Current occupant | No business listing at 130 Sun Light Dr | Likely vacant |
+
+**New market facts**
+- **Otter Self Storage, 100 Sun Light Dr (next door)** offers RV, boat and vehicle parking. It advertises 9'x18' parking at about **$99/mo** (promo). This is a direct comp and also competition, so self-operated RV storage here would be undercut on price. That favors leasing to a yard or car-lot user over Approach 3.
+- A 2025 rezoning (case 2025-11-005) covers residential lots at **Rosebud Ln & Sun Light Dr**, so the street turns residential behind the commercial frontage. Expect buffer and screening conditions on noisy yard uses.
+
+**Effect on the numbers:** the land-lease upside for a restaurant or car wash is unlikely without 544 frontage, so value the site mostly as a yard. Keep the asking rent at $3,950/mo, but expect to sign closer to **$3,000–$3,500/mo**. Budget for opaque screening if the fence isn't already compliant.
+
 ## Questions for the owner / to verify
 
 1. Does the lot touch SC-544 directly, or is access only from Sun Light Dr? Is there a curb cut?

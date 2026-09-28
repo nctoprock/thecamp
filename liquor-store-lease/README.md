@@ -33,8 +33,7 @@ Market averages: Lexington ~$25.49/SF (mostly NNN); Forest Acres ~$31/SF.
 ## Next steps
 1. For each site, map churches, schools and playgrounds within 300/500 ft.
 2. Confirm zoning and that the landlord allows liquor sales. Some centers have exclusives or restrictions.
-3. Check the SC liquor store limit of 3 licenses per person/entity if relevant.
-4. Get a lease contingency for SCDOR license approval.
+3. Get a lease contingency for SCDOR license approval.
 
 ## Sources
 - https://www.commercialcafe.com/retail/us/sc/lexington/

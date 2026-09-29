@@ -1,0 +1,227 @@
+<title>Liquor Store Site Shortlist</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: single reading column; tiered listing cards with a fact grid; rules panel up top */
+:root{
+  --bg:#f6f7f4; --surface:#ffffff; --fg:#1d2420; --muted:#5b665f; --line:#dde2dc;
+  --accent:#2f5d46; --accent-soft:#e3ede6;
+  --good:#2f6b3f; --good-bg:#e2f0e5; --warn:#8a5a00; --warn-bg:#fbefd6; --bad:#9b2c24; --bad-bg:#f8e1de;
+  --display:"Source Serif 4", Georgia, serif; --body:"Public Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141916; --surface:#1c2320; --fg:#e6ebe7; --muted:#9aa69f; --line:#2e3833;
+  --accent:#8cc5a5; --accent-soft:#223129;
+  --good:#8fd1a0; --good-bg:#1f3325; --warn:#f0c26a; --warn-bg:#3a2e14; --bad:#f19b92; --bad-bg:#3d201d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141916; --surface:#1c2320; --fg:#e6ebe7; --muted:#9aa69f; --line:#2e3833;
+  --accent:#8cc5a5; --accent-soft:#223129;
+  --good:#8fd1a0; --good-bg:#1f3325; --warn:#f0c26a; --warn-bg:#3a2e14; --bad:#f19b92; --bad-bg:#3d201d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body)}
+.wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:40px 64px;display:grid;gap:36px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:2.1rem}
+h2{font-size:1.4rem}
+h3{font-size:1.15rem}
+p{margin:0}
+.eyebrow{font:500 .75rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{display:grid;gap:12px}
+header .sub{color:var(--muted);max-width:64ch}
+.rules{background:var(--accent-soft);border-radius:10px;padding:20px 22px;display:grid;gap:10px}
+.rules ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+section{display:grid;gap:16px}
+section > .intro{color:var(--muted);max-width:64ch}
+.cards{display:grid;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:12px;min-width:0}
+.card-head{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;justify-content:space-between}
+.addr{color:var(--muted);font-size:.9rem}
+.pill{font:600 .72rem/1 var(--body);letter-spacing:.04em;text-transform:uppercase;padding:6px 9px;border-radius:999px;white-space:nowrap}
+.pill.good{background:var(--good-bg);color:var(--good)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 18px;margin:0}
+.facts div{min-width:0}
+.facts dt{font:500 .7rem/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.notes{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.notes li::marker{color:var(--accent)}
+.flag{color:var(--bad);font-weight:600}
+.plain{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:500 .7rem/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+footer{color:var(--muted);font-size:.85rem;display:grid;gap:8px;border-top:1px solid var(--line);padding-top:20px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:480px){h1{font-size:1.7rem}.wrap{padding-block:28px 48px}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Retail liquor · Lexington, Red Bank &amp; Forest Acres, SC</span>
+  <h1>Liquor Store Site Shortlist</h1>
+  <p class="sub">A first pass at available retail spaces that could hold a package liquor store. Listing details were checked against public listings on September 29, 2026. Rents marked "on request" need a call to the broker.</p>
+</header>
+
+<div class="rules">
+  <h3>What every site has to pass</h3>
+  <ul>
+    <li><strong>Distance:</strong> no church, school or playground within <strong>300 ft</strong> inside city limits, or <strong>500 ft</strong> outside city limits. Measured along the road or sidewalk from the store's entrance. SC does not allow waivers for liquor stores.</li>
+    <li><strong>Zoning:</strong> the parcel's zoning must allow retail liquor sales. Forest Acres banned new alcohol sales in the Covenant Crossing area (April 2026). None of the sites below are in that area.</li>
+    <li><strong>Lease:</strong> the landlord must allow liquor sales, and no other tenant can hold an exclusive on it.</li>
+  </ul>
+  <p>Distances below have <strong>not</strong> been measured yet. They are the first thing to confirm on each site.</p>
+</div>
+
+<section>
+  <h2>Recommended to tour</h2>
+  <p class="intro">No obvious deal-breakers found. Each still needs a measured distance check and landlord approval.</p>
+  <div class="cards">
+
+    <article class="card">
+      <div class="card-head"><div><h3>Colonnade at White Knoll</h3><div class="addr">1787 S Lake Dr, Lexington, SC 29073 · Red Bank</div></div><span class="pill good">Strong</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>1,203 SF</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Ziff Properties · Culler Bennett · 843-724-3485</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>22,640 SF strip center with Anytime Fitness, Five Guys, T-Mobile and Title Max.</li>
+        <li>Two licensed liquor stores already operate within a block (1766 and 1856 S Lake Dr), a good sign the area clears the distance rule.</li>
+        <li>Likely unincorporated, so the 500 ft rule applies. Nearby competition is the main drawback.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>Lexington Pavilion</h3><div class="addr">5135 Sunset Blvd, Lexington, SC 29072</div></div><span class="pill good">Strong</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>3 suites, 770–3,752 SF</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Rivercrest Realty · Heather Smith · 919-926-3097</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>Next to Target, with Best Buy, PetSmart and World Market; 41,000+ cars per day on Sunset Blvd.</li>
+        <li>Happy Hours Wine &amp; Spirits (5175 Sunset) is licensed nearby.</li>
+        <li>Measure the distance to 12 Springs Community Church at 5236 Sunset Blvd.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>McCauley Square</h3><div class="addr">5076 Sunset Blvd, Suite A or D, Lexington, SC 29072</div></div><span class="pill good">Good</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>1,250 SF each</dd></div>
+        <div><dt>Rent</dt><dd>Ste A $2,700/mo · Ste D $2,500/mo (about $24–26/SF/yr)</dd></div>
+        <div><dt>Broker</dt><dd>Rivercrest Realty · Heather Smith · 919-926-3097</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>Suite A is a former restaurant; Suite D was a salon.</li>
+        <li>Sam's Fine Wine is licensed next door at 5050 Sunset, so distance is likely fine, but it is direct competition. Ask whether Sam's lease gives it an exclusive.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>Cardinal Crossing</h3><div class="addr">4701 Forest Dr, Columbia, SC 29206 · Forest Acres</div></div><span class="pill good">Good</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>±1,920 SF</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Colliers (listing updated Aug 9, 2026)</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>New mixed-use center with 256 apartments; tenants include Bad Daddy's, Crumbl, Clean Juice and Nothing Bundt Cakes.</li>
+        <li>Ask whether the landlord allows a liquor store in a residential-heavy project.</li>
+        <li>Kids Garden daycare is across the street (4714 Forest Dr). Confirm with SCDOR whether a daycare counts as a school. A liquor store already operates at 4718 Forest Dr, next to it.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Possible, with an issue to clear first</h2>
+  <p class="intro">Each has one specific problem that could rule it out.</p>
+  <div class="cards">
+
+    <article class="card">
+      <div class="card-head"><div><h3>5551 Sunset Blvd</h3><div class="addr">Lexington, SC 29072 · next to Starbucks</div></div><span class="pill warn">Church nearby</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>1,975 SF</dd></div>
+        <div><dt>Rent</dt><dd>$30.00/SF/yr NNN (about $4,938/mo)</dd></div>
+        <div><dt>Broker</dt><dd>Fuzion Business &amp; Real Estate · James Spangler</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>Corner on US-378 in the main Lexington corridor.</li>
+        <li class="flag">Saxe Gotha Presbyterian Church is at 5503 Sunset Blvd, on the same block. Likely inside 300 ft; measure before touring.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>Lexington Marketplace</h3><div class="addr">5318 Sunset Blvd, Suite A1, Lexington, SC 29072</div></div><span class="pill warn">Church nearby</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>±1,983 SF</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Colliers · Rox Pollard</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>126,406 SF center; about 43,200 cars per day.</li>
+        <li class="flag">12 Springs Community Church is at 5236 Sunset Blvd. Measure the distance.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>East Towne Centre</h3><div class="addr">5556–5570 Sunset Blvd, Lexington, SC 29072</div></div><span class="pill warn">Church nearby</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>Ask broker</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Rivercrest Realty · Heather Smith · 919-926-3097</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>Walmart Supercenter anchor; Buffalo Wild Wings, Dollar Tree, Cato.</li>
+        <li class="flag">Across Sunset Blvd from Saxe Gotha Presbyterian Church (5503). Measure the distance.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="card-head"><div><h3>Forest Park Shopping Center</h3><div class="addr">4711 Forest Dr, Columbia, SC 29206 · Forest Acres</div></div><span class="pill warn">Likely exclusive</span></div>
+      <dl class="facts">
+        <div><dt>Space</dt><dd>1,400 SF</dd></div>
+        <div><dt>Rent</dt><dd>On request</dd></div>
+        <div><dt>Broker</dt><dd>Colliers · Danny Bonds, Rox Pollard</dd></div>
+      </dl>
+      <ul class="notes">
+        <li>90,000 SF center anchored by Lowes Foods; about 26,300 cars per day.</li>
+        <li class="flag">Knock Knock Spirits (Lowes Foods' liquor store) is already in this center and likely holds a liquor exclusive. Same daycare question as Cardinal Crossing.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Not recommended right now</h2>
+  <div class="plain">
+    <table>
+      <thead><tr><th>Site</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>South Lake Pointe<br><span class="addr">1123 S Lake Dr, Red Bank</span></td><td>Southlake Liquors already operates in this center, and a current sale listing shows it 100% leased. The 1,500 SF at $20/SF listing may be out of date. Worth one call only to ask whether Southlake is leaving.</td></tr>
+        <tr><td>5032 Sunset Blvd<br><span class="addr">Lexington</span></td><td>Only a 39,204 SF space is listed. Far too large.</td></tr>
+        <tr><td>Former Richland Mall<br><span class="addr">3400 Forest Dr, Columbia</span></td><td>Being torn down and rebuilt. New retail opens late 2027–2028. A future option only.</td></tr>
+        <tr><td>Trenholm Plaza<br><span class="addr">Forest Dr &amp; Trenholm Rd, Forest Acres</span></td><td>No specific suite listed. Close to the Covenant Crossing alcohol-ban area and Trenholm Road UMC. Ask EDENS only if Forest Acres is the priority.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Next steps</h2>
+  <ul class="notes">
+    <li>Call the brokers for the four recommended sites for rent, suite plans and whether liquor use is allowed.</li>
+    <li>Have each suite's entrance measured to the nearest church, school or playground.</li>
+    <li>Confirm zoning with Lexington County (803-785-8121), the Town of Lexington or Forest Acres, depending on the site.</li>
+    <li>Make any lease contingent on SC Department of Revenue license approval.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Prepared September 29, 2026 from public listings (LoopNet, Colliers, CommercialSearch, Rivercrest, Ziff) and business directories. Availability and pricing change often; confirm with each broker.</p>
+  <p>This is a site screening, not legal advice. Final distance and zoning answers come from SCDOR and the local zoning office.</p>
+</footer>
+</div>

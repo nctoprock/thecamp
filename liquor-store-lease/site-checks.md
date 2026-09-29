@@ -1,5 +1,7 @@
 # Site Checks: Distance Rule, Zoning, Landlord
 
+> **Superseded 2026-09-29 by the re-check in `client-shortlist.html`.** Corrections: 5551 Sunset is 1,975 SF at $30/SF NNN and sits beside Saxe Gotha Presbyterian Church (5503 Sunset), so it is no longer a top pick. 5318 Sunset is 1,983 SF (12 Springs Community Church at 5236 Sunset is nearby). 5076 Sunset Ste A/D are 1,250 SF at $2,700/$2,500 per month. 5032 Sunset lists only 39,204 SF. South Lake Pointe (1123 S Lake Dr) shows 100% leased in a sale listing.
+
 Checked 2026-09-28 using web search only. Map, GIS and county/city code sites were blocked from this environment, so **no distances here were measured**. Treat every row as "what to verify", not a clearance.
 
 Rule reminder: no church, school or playground within **300 ft** (inside city limits) or **500 ft** (unincorporated). Measured along the road or sidewalk from the store's entrance. No waivers for liquor stores.

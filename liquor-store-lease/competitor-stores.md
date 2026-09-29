@@ -12,6 +12,11 @@ Collected 2026-09-29 from directory listings (Yellow Pages, Yelp, store sites). 
 - 109 Old Chapin Rd Ste V (Palmetto Wine and Spirits)
 - 100 Old Cherokee Rd
 - 1120 W Main St
+- 744 W Main St (Liquor Depot, Food Lion center)
+- 581 Corley Mill Rd (Liquor Depot Corley Mill)
+- 203 Hwy 378 (Crouch's Liquor Store)
+- 2440 Augusta Hwy Ste B (Lexington Wines & Spirits, Lowes Foods center)
+- 929 N Lake Dr = Lexington Beverage Outlet
 
 ## Lexington / Red Bank (29073)
 - 1123 S Lake Dr Ste C (Southlake Liquors)
@@ -27,6 +32,8 @@ Collected 2026-09-29 from directory listings (Yellow Pages, Yelp, store sites). 
 - 4718 Forest Dr
 - 5424 Forest Dr Ste 108 (Rico's)
 - 2212 and 2230 Decker Blvd
+- 3155 Forest Dr (Morganelli's Party Store)
+- 3400 Forest Dr
 - 5210 and 5445 Two Notch Rd
 
 ## Outer areas

@@ -20,6 +20,39 @@ Stores at 3155, 3400, 4711, 4718 and 5424 Forest Dr, plus Decker Blvd and Two No
 ## Just outside the three areas (backup)
 - **4079 Augusta Hwy, Gilbert area:** 2,400 SF at $19/SF. Subway, Domino's and Family Dollar in the center. Roughly 1.5+ miles west of 2440 Augusta Hwy (estimate). New elementary school next door, so check the distance rule.
 
+## Second pass (more corridors), 2026-09-29
+
+New listings found, and why most fail:
+
+| Site | Listing | Nearest known liquor store | Call |
+|---|---|---|---|
+| 356 Longs Pond Rd (next to Starbucks, I-20 exit 51) | One suite in a newer building; listing no longer advertised | Same gap as 364 Longs Pond Rd | **Ask Fuzion if still open** |
+| Longs Pond Rd corner lot with traffic light | Commercial land (build-to-suit) | Same gap as 364 Longs Pond Rd | Longer-term option |
+| Edmund Hwy (SC-302) / S Lake Dr, south Red Bank | Rough-graded land parcels; 6204 Edmund Hwy flex building is fully leased | None found on Edmund Hwy; S Lake Dr cluster (1856) is the closest known | Maybe, land only |
+| Murray Landing, 2732 N Lake Dr | 1,415 SF outparcel | ABC Store in the same center | No |
+| 847-851 US-378 (Publix center) | Former nail salon | Lake Murray Liquors, 760 Hwy 378 | No |
+| 162 Hwy 378 | Retail | Crouch's, 203 Hwy 378 | No |
+| 1223 S Lake Dr | Medical office | S Lake Dr cluster | No |
+| Shoppes at White Knoll, 1788-1792 S Lake Dr | 1,200 SF | 1766 and 1856 S Lake Dr | No |
+| 934 N Lake Dr (Lexington Towne Centre II) | Up to 11,100 SF | 929 N Lake Dr, across the street | No |
+| 109 Old Chapin Rd (Shoppes at Flight Deck) | Retail | Palmetto Wine & Spirits in same center | No |
+| 5441 Platt Springs Rd | 1,400 SF | 5141/5143 Platt Springs Rd | No |
+
+Other stores found: Lake Murray Liquors, 1345 Dutch Fork Rd, Irmo (Ballentine); ABC Store at Murray Landing.
+
+Takeaway: the Longs Pond Rd / I-20 exit 51 area is the one clear gap. South Red Bank along Edmund Hwy might be a second gap, but only land is available there now.
+
+Sources (second pass):
+- 356 Longs Pond Rd: https://www.loopnet.com/Listing/356-Longs-Pond-Rd-Lexington-SC/24804076/
+- Longs Pond Rd land: https://www.loopnet.com/Listing/Longs-Pond-Rd-Lexington-SC/34629738/
+- Edmund Hwy / S Lake Dr land: https://www.loopnet.com/Listing/S-Lake-Dr-Lexington-SC/15188492/
+- 6204 Edmund Hwy: https://realmo.com/listing-m/6204-edmund-hwy-lexington-sc-29073/1185727560571025681
+- Murray Landing tenants: https://www.crexi.com/lease/properties/645079/south-carolina-murray-landing
+- 847-851 US-378: https://www.showcase.com/847-851-us-378-lexington-sc-29072/13049819/
+- Lexington Towne Centre II: https://www.cityfeet.com/cont/lake-murray-lexington-sc/retail-space-for-lease
+- Shoppes at Flight Deck: https://www.loopnet.com/Listing/109-Old-Chapin-Rd-Lexington-SC/36632381/
+- Lake Murray Liquors Irmo: https://www.yellowpages.com/irmo-sc/mip/lake-murray-liquors-13639750
+
 ## Sources
 - 364 Longs Pond Rd: https://www.loopnet.ca/Listing/364-Longs-Pond-Rd-Lexington-SC/26690394/
 - Deerfield Elementary / RADIUS Church: https://radiuschurch.org/longs-pond

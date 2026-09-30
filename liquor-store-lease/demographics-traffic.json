@@ -1,0 +1,436 @@
+{
+ "364/356 Longs Pond Rd, Lexington": {
+  "rings": {
+   "1": {
+    "pop": 1931,
+    "adults18": 1351,
+    "households": 636,
+    "median_hh_income": 94413,
+    "median_age": 35.0,
+    "pct_hh_100k": 52.5,
+    "pop_2010_14": 1458,
+    "growth_pct": 32.4,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "3": {
+    "pop": 20148,
+    "adults18": 14374,
+    "households": 6625,
+    "median_hh_income": 98556,
+    "median_age": 36.2,
+    "pct_hh_100k": 49.4,
+    "pop_2010_14": 12948,
+    "growth_pct": 55.6,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "5": {
+    "pop": 54721,
+    "adults18": 39830,
+    "households": 19218,
+    "median_hh_income": 85125,
+    "median_age": 36.3,
+    "pct_hh_100k": 39.9,
+    "pop_2010_14": 39436,
+    "growth_pct": 38.8,
+    "stores": 10,
+    "adults_per_store": 3983
+   }
+  },
+  "traffic": [
+   {
+    "dist_mi": 0.51,
+    "road": "Secondary road 1260",
+    "segment": "S- 70 (TWO NOTCH RD), L- 5656 TO S- 204 (LONGS POND RD)",
+    "aadt": 2300,
+    "year": 2025,
+    "aadt_2020": 2500
+   },
+   {
+    "dist_mi": 0.57,
+    "road": "Secondary road 204",
+    "segment": "I- 20 (INTERSTATE 20) TO S- 243 (NAZARETH RD)",
+    "aadt": 10200,
+    "year": 2025,
+    "aadt_2020": 9700
+   },
+   {
+    "dist_mi": 0.75,
+    "road": "Secondary road 70",
+    "segment": "S- 1260 (MUDDY SPRINGS RD), L- 5656 TO S- 77 (TWO NOTCH RD)",
+    "aadt": 8400,
+    "year": 2025,
+    "aadt_2020": 8900
+   },
+   {
+    "dist_mi": 0.97,
+    "road": "Secondary road 204",
+    "segment": "S- 77 (BARR RD) TO I- 20 (INTERSTATE 20)",
+    "aadt": 14200,
+    "year": 2025,
+    "aadt_2020": 10600
+   },
+   {
+    "dist_mi": 1.24,
+    "road": "Secondary road 1455",
+    "segment": "S- 169 (SMITH POND RD) TO S- 77 (BARR RD)",
+    "aadt": 2600,
+    "year": 2025,
+    "aadt_2020": 2400
+   }
+  ]
+ },
+ "2401 Dutch Fork Rd, Chapin": {
+  "rings": {
+   "1": {
+    "pop": 1895,
+    "adults18": 1397,
+    "households": 638,
+    "median_hh_income": 97681,
+    "median_age": 42.2,
+    "pct_hh_100k": 44.9,
+    "pop_2010_14": 1500,
+    "growth_pct": 26.4,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "3": {
+    "pop": 16330,
+    "adults18": 12138,
+    "households": 5848,
+    "median_hh_income": 115203,
+    "median_age": 42.2,
+    "pct_hh_100k": 55.7,
+    "pop_2010_14": 10223,
+    "growth_pct": 59.7,
+    "stores": 2,
+    "adults_per_store": 6069
+   },
+   "5": {
+    "pop": 37059,
+    "adults18": 27655,
+    "households": 13329,
+    "median_hh_income": 113220,
+    "median_age": 42.1,
+    "pct_hh_100k": 55.5,
+    "pop_2010_14": 26577,
+    "growth_pct": 39.4,
+    "stores": 8,
+    "adults_per_store": 3457
+   }
+  },
+  "traffic": [
+   {
+    "dist_mi": 0.91,
+    "road": "Secondary road 216",
+    "segment": "S- 618 (JOHNSON MARINA RD) TO S- 1333 (REFORMATION RD)",
+    "aadt": 600,
+    "year": 2025,
+    "aadt_2020": 475
+   },
+   {
+    "dist_mi": 0.92,
+    "road": "Secondary road 216",
+    "segment": "DEAD END TO S- 1775 (FORREST SHEALY RD)",
+    "aadt": 2000,
+    "year": 2025,
+    "aadt_2020": 1850
+   },
+   {
+    "dist_mi": 0.95,
+    "road": "Secondary road 216",
+    "segment": "S- 1775 (FORREST SHEALY RD) TO S- 618 (JOHNSON MARINA RD)",
+    "aadt": 3500,
+    "year": 2025,
+    "aadt_2020": 3100
+   },
+   {
+    "dist_mi": 1.08,
+    "road": "Secondary road 618",
+    "segment": "S- 216 (JOHNSON MARINA RD) TO S- 1333 (REFORMATION RD)",
+    "aadt": 3300,
+    "year": 2025,
+    "aadt_2020": 3300
+   },
+   {
+    "dist_mi": 1.25,
+    "road": "Secondary road 405",
+    "segment": "S- 39 (CHAPIN RD) TO County Line - LEXINGTON",
+    "aadt": 2500,
+    "year": 2025,
+    "aadt_2020": 1900
+   },
+   {
+    "dist_mi": 1.29,
+    "road": "Secondary road 618",
+    "segment": "S- 1333 (REFORMATION RD) TO US 76 (DUTCH FORK RD)",
+    "aadt": 5200,
+    "year": 2025,
+    "aadt_2020": 5000
+   },
+   {
+    "dist_mi": 1.43,
+    "road": "US Route 76",
+    "segment": "S- 83 (LEXINGTON AVE) TO County Line - RICHLAND",
+    "aadt": 16600,
+    "year": 2025,
+    "aadt_2020": 9800
+   },
+   {
+    "dist_mi": 1.49,
+    "road": "Secondary road 233",
+    "segment": "County Line - RICHLAND TO S- 270 (WESSINGER RD)",
+    "aadt": 7200,
+    "year": 2025,
+    "aadt_2020": 5300
+   }
+  ]
+ },
+ "1623 N Lake Dr, Lexington": {
+  "rings": {
+   "1": {
+    "pop": 2380,
+    "adults18": 1849,
+    "households": 937,
+    "median_hh_income": 125055,
+    "median_age": 44.4,
+    "pct_hh_100k": 60.7,
+    "pop_2010_14": 1996,
+    "growth_pct": 19.3,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "3": {
+    "pop": 25425,
+    "adults18": 19792,
+    "households": 10296,
+    "median_hh_income": 105011,
+    "median_age": 45.0,
+    "pct_hh_100k": 51.2,
+    "pop_2010_14": 22560,
+    "growth_pct": 12.7,
+    "stores": 6,
+    "adults_per_store": 3299
+   },
+   "5": {
+    "pop": 82153,
+    "adults18": 64125,
+    "households": 33469,
+    "median_hh_income": 91684,
+    "median_age": 42.5,
+    "pct_hh_100k": 43.0,
+    "pop_2010_14": 74833,
+    "growth_pct": 9.8,
+    "stores": 18,
+    "adults_per_store": 3562
+   }
+  },
+  "traffic": [
+   {
+    "dist_mi": 0.25,
+    "road": "Secondary road 28",
+    "segment": "SC 6 (N LAKE DR) TO S- 738 (ANDREW CORLEY RD)",
+    "aadt": 9100,
+    "year": 2025,
+    "aadt_2020": 8500
+   },
+   {
+    "dist_mi": 0.64,
+    "road": "Secondary road 68",
+    "segment": "S- 738 (ANDREW CORLEY RD) TO SC 6 (N LAKE DR), L- 5105",
+    "aadt": 4500,
+    "year": 2025,
+    "aadt_2020": 3100
+   },
+   {
+    "dist_mi": 0.92,
+    "road": "SC Route 6",
+    "segment": "SC 60 (LAKE MURRAY BLVD), S- 107 TO S- 68 (CORLEY MILL RD), L- 5105",
+    "aadt": 31300,
+    "year": 2025,
+    "aadt_2020": 29100
+   },
+   {
+    "dist_mi": 0.95,
+    "road": "Secondary road 408",
+    "segment": "S- 485 (OLD CHEROKEE RD) TO SC 6 (N LAKE DR)",
+    "aadt": 12100,
+    "year": 2025,
+    "aadt_2020": 11400
+   },
+   {
+    "dist_mi": 1.08,
+    "road": "Secondary road 28",
+    "segment": "S- 738 (ANDREW CORLEY RD) TO S- 874 (HOPE FERRY RD)",
+    "aadt": 4000,
+    "year": 2025,
+    "aadt_2020": 3500
+   }
+  ]
+ },
+ "Edmund Hwy / S Lake Dr land, Red Bank": {
+  "rings": {
+   "1": {
+    "pop": 1062,
+    "adults18": 786,
+    "households": 409,
+    "median_hh_income": 59401,
+    "median_age": 37.5,
+    "pct_hh_100k": 31.7,
+    "pop_2010_14": 1132,
+    "growth_pct": -6.2,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "3": {
+    "pop": 12578,
+    "adults18": 9037,
+    "households": 4667,
+    "median_hh_income": 69219,
+    "median_age": 35.2,
+    "pct_hh_100k": 33.4,
+    "pop_2010_14": 9665,
+    "growth_pct": 30.1,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "5": {
+    "pop": 36482,
+    "adults18": 26898,
+    "households": 13798,
+    "median_hh_income": 64365,
+    "median_age": 36.6,
+    "pct_hh_100k": 27.6,
+    "pop_2010_14": 30832,
+    "growth_pct": 18.3,
+    "stores": 3,
+    "adults_per_store": 8966
+   }
+  },
+  "traffic": [
+   {
+    "dist_mi": 0.78,
+    "road": "SC Route 302",
+    "segment": "SC 6 (S LAKE DR) TO S- 622 (CHAPEL RD)",
+    "aadt": 12300,
+    "year": 2025,
+    "aadt_2020": 10100
+   },
+   {
+    "dist_mi": 0.92,
+    "road": "SC Route 6",
+    "segment": "SC 302 (EDMUND HWY) TO SC 302 (EDMUND HWY)",
+    "aadt": 21000,
+    "year": 2025,
+    "aadt_2020": 17400
+   }
+  ]
+ },
+ "7949 Broad River Rd, Irmo": {
+  "rings": {
+   "1": {
+    "pop": 5358,
+    "adults18": 4206,
+    "households": 2081,
+    "median_hh_income": 87646,
+    "median_age": 41.0,
+    "pct_hh_100k": 43.4,
+    "pop_2010_14": 5285,
+    "growth_pct": 1.4,
+    "stores": 0,
+    "adults_per_store": null
+   },
+   "3": {
+    "pop": 36095,
+    "adults18": 28458,
+    "households": 14922,
+    "median_hh_income": 84753,
+    "median_age": 41.3,
+    "pct_hh_100k": 39.3,
+    "pop_2010_14": 34191,
+    "growth_pct": 5.6,
+    "stores": 7,
+    "adults_per_store": 4065
+   },
+   "5": {
+    "pop": 74594,
+    "adults18": 58665,
+    "households": 30221,
+    "median_hh_income": 86208,
+    "median_age": 40.5,
+    "pct_hh_100k": 39.0,
+    "pop_2010_14": 68638,
+    "growth_pct": 8.7,
+    "stores": 11,
+    "adults_per_store": 5333
+   }
+  },
+  "traffic": [
+   {
+    "dist_mi": 0.17,
+    "road": "Secondary road 27",
+    "segment": "US 76 (BROAD RIVER RD) TO County Line - LEXINGTON",
+    "aadt": 6600,
+    "year": 2025,
+    "aadt_2020": 6600
+   },
+   {
+    "dist_mi": 0.33,
+    "road": "US Route 76",
+    "segment": "S- 27 (N WOODROW ST) TO S- 1862 (ROYAL TOWER DR)",
+    "aadt": 15400,
+    "year": 2025,
+    "aadt_2020": 15000
+   },
+   {
+    "dist_mi": 0.57,
+    "road": "Secondary road 1862",
+    "segment": "US 76 (BROAD RIVER RD) TO County Line - LEXINGTON",
+    "aadt": 8100,
+    "year": 2025,
+    "aadt_2020": 9000
+   },
+   {
+    "dist_mi": 0.62,
+    "road": "Secondary road 2680",
+    "segment": "S- 1862 (N ROYAL TOWER DR) TO L- 2159 (PARLOCK RD)",
+    "aadt": 2400,
+    "year": 2025,
+    "aadt_2020": 2600
+   },
+   {
+    "dist_mi": 0.62,
+    "road": "US Route 76",
+    "segment": "S- 1862 (ROYAL TOWER DR) TO I- 26 (INTERSTATE 26), US 176",
+    "aadt": 24500,
+    "year": 2025,
+    "aadt_2020": 22200
+   },
+   {
+    "dist_mi": 0.7,
+    "road": "Secondary road 3048",
+    "segment": "US 76 (BROAD RIVER RD) TO S- 2603 (LORDSHIP LN)",
+    "aadt": 6900,
+    "year": 2025,
+    "aadt_2020": 7400
+   },
+   {
+    "dist_mi": 0.96,
+    "road": "US Route 76",
+    "segment": "SC 6 (DREHER SHOALS RD) TO S- 27 (N WOODROW ST)",
+    "aadt": 20100,
+    "year": 2025,
+    "aadt_2020": 18500
+   },
+   {
+    "dist_mi": 1.07,
+    "road": "Secondary road 42",
+    "segment": "County Line - RICHLAND TO SC 60 (LAKE MURRAY BLVD)",
+    "aadt": 6400,
+    "year": 2025,
+    "aadt_2020": 5900
+   }
+  ]
+ }
+}

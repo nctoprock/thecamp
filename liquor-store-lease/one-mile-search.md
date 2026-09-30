@@ -1,5 +1,7 @@
 # 1-Mile Spacing Search (Lexington, Red Bank, Forest Acres)
 
+> **Update 2026-09-30:** distances in this file were estimates. See `measured-results.md` for measured distances, which change several verdicts.
+
 Goal: nearest existing liquor store about 1 mile away. Checked 2026-09-29 by web search. Map tools are blocked in this environment, so every distance here is an **estimate from street layout and address numbers**. Confirm each one on a map.
 
 ## Forest Acres: no candidates

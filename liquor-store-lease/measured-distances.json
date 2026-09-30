@@ -1,0 +1,361 @@
+{
+ "364 Longs Pond Rd": {
+  "coords": [
+   33.921185888839,
+   -81.289808768958
+  ],
+  "nearest": [
+   {
+    "store": "1316 S Lake Dr",
+    "straight": 3.26,
+    "drive": 5.5
+   },
+   {
+    "store": "1766 S Lake Dr",
+    "straight": 3.64,
+    "drive": 4.84
+   },
+   {
+    "store": "1123 S Lake Dr",
+    "straight": 3.75,
+    "drive": 4.77
+   }
+  ],
+  "sensitive": []
+ },
+ "356 Longs Pond Rd": {
+  "coords": [
+   33.921786853186,
+   -81.289671122175
+  ],
+  "nearest": [
+   {
+    "store": "1316 S Lake Dr",
+    "straight": 3.24,
+    "drive": 5.46
+   },
+   {
+    "store": "1766 S Lake Dr",
+    "straight": 3.64,
+    "drive": 4.89
+   },
+   {
+    "store": "1123 S Lake Dr",
+    "straight": 3.72,
+    "drive": 4.72
+   }
+  ],
+  "sensitive": []
+ },
+ "1623 N Lake Dr": {
+  "coords": [
+   34.028315238661,
+   -81.2206264667
+  ],
+  "nearest": [
+   {
+    "store": "5222 Sunset Blvd",
+    "straight": 1.91,
+    "drive": 3.56
+   },
+   {
+    "store": "5175 Sunset Blvd",
+    "straight": 1.95,
+    "drive": 3.75
+   },
+   {
+    "store": "100 Old Cherokee Rd",
+    "straight": 2.06,
+    "drive": 2.39
+   }
+  ],
+  "sensitive": []
+ },
+ "1424 Two Notch Rd": {
+  "coords": [
+   33.954976725816,
+   -81.229556051672
+  ],
+  "nearest": [
+   {
+    "store": "1123 S Lake Dr",
+    "straight": 0.44,
+    "drive": 0.47
+   },
+   {
+    "store": "1316 S Lake Dr",
+    "straight": 1.15,
+    "drive": 1.2
+   },
+   {
+    "store": "658 Two Notch Rd",
+    "straight": 1.99,
+    "drive": 2.01
+   }
+  ],
+  "sensitive": []
+ },
+ "4079 Augusta Hwy": {
+  "coords": [
+   33.964225712395,
+   -81.39170007873
+  ],
+  "nearest": [
+   {
+    "store": "1428 Spring Hill Rd Gilbert",
+    "straight": 0.74,
+    "drive": 0.8
+   },
+   {
+    "store": "2440 Augusta Hwy",
+    "straight": 5.0,
+    "drive": 5.17
+   },
+   {
+    "store": "OSM: Lake Murray Liquors (Highway 378)",
+    "straight": 5.46,
+    "drive": 6.41
+   }
+  ],
+  "sensitive": [
+   [
+    662,
+    "Centerville Elementary School",
+    "school"
+   ]
+  ]
+ },
+ "6204 Edmund Hwy": {
+  "coords": [
+   33.845452913047,
+   -81.209261505126
+  ],
+  "nearest": [
+   {
+    "store": "5141 Platt Springs Rd",
+    "straight": 4.45,
+    "drive": 6.08
+   },
+   {
+    "store": "1856 S Lake Dr",
+    "straight": 4.55,
+    "drive": 4.88
+   },
+   {
+    "store": "7801 Edmund Hwy Pelion",
+    "straight": 4.7,
+    "drive": 4.69
+   }
+  ],
+  "sensitive": []
+ },
+ "2401 Dutch Fork Rd": {
+  "coords": [
+   34.13953604673,
+   -81.289648806833
+  ],
+  "nearest": [
+   {
+    "store": "OSM: Priddy's Party Shop",
+    "straight": 2.85,
+    "drive": 4.36
+   },
+   {
+    "store": "11107 Broad River Rd",
+    "straight": 2.94,
+    "drive": 4.28
+   },
+   {
+    "store": "1345 Dutch Fork Rd",
+    "straight": 3.28,
+    "drive": 3.7
+   }
+  ],
+  "sensitive": []
+ },
+ "575 Chapin Rd": {
+  "coords": [
+   34.1666276,
+   -81.3532353
+  ],
+  "nearest": [
+   {
+    "store": "1237 Chapin Rd",
+    "straight": 0.1,
+    "drive": 0.1
+   },
+   {
+    "store": "1419 Chapin Rd",
+    "straight": 0.18,
+    "drive": 0.18
+   },
+   {
+    "store": "140 Amicks Ferry Rd",
+    "straight": 0.21,
+    "drive": 0.27
+   }
+  ],
+  "sensitive": [
+   [
+    1841,
+    "Mount Zion Church",
+    "place_of_worship"
+   ],
+   [
+    2048,
+    "Saint Johns Church",
+    "place_of_worship"
+   ],
+   [
+    2074,
+    "Mount Horeb Lutheran Church",
+    "place_of_worship"
+   ]
+  ]
+ },
+ "900 Knox Abbott Dr": {
+  "coords": [
+   33.981650580551,
+   -81.063645432514
+  ],
+  "nearest": [
+   {
+    "store": "212 Knox Abbott Dr",
+    "straight": 0.68,
+    "drive": 0.77
+   },
+   {
+    "store": "1100 Meeting St WC",
+    "straight": 0.7,
+    "drive": 1.07
+   },
+   {
+    "store": "1147 Walter Price Rd",
+    "straight": 0.71,
+    "drive": 1.21
+   }
+  ],
+  "sensitive": [
+   [
+    1538,
+    "TLC Memorial Park",
+    "park"
+   ],
+   [
+    1924,
+    "Brookland Cayce High School",
+    "school"
+   ],
+   [
+    2598,
+    "Cayce School",
+    "school"
+   ]
+  ]
+ },
+ "1340 Knox Abbott Dr": {
+  "coords": [
+   33.978720004051,
+   -81.072800246275
+  ],
+  "nearest": [
+   {
+    "store": "OSM: J & F Package Store (Augusta Road)",
+    "straight": 0.71,
+    "drive": 0.9
+   },
+   {
+    "store": "1100 Meeting St WC",
+    "straight": 0.75,
+    "drive": 0.94
+   },
+   {
+    "store": "1147 Walter Price Rd",
+    "straight": 0.8,
+    "drive": 1.08
+   }
+  ],
+  "sensitive": [
+   [
+    1580,
+    "TLC Memorial Park",
+    "park"
+   ],
+   [
+    1998,
+    "American Creative School",
+    "school"
+   ]
+  ]
+ },
+ "7949 Broad River Rd": {
+  "coords": [
+   34.105948430286,
+   -81.187708658127
+  ],
+  "nearest": [
+   {
+    "store": "7467 St Andrews Rd",
+    "straight": 1.33,
+    "drive": 2.65
+   },
+   {
+    "store": "OSM: ABC Package Store (Saint Andrews Road)",
+    "straight": 1.42,
+    "drive": 2.73
+   },
+   {
+    "store": "800 Lake Murray Blvd",
+    "straight": 1.44,
+    "drive": 1.67
+   }
+  ],
+  "sensitive": [
+   [
+    317,
+    "Saint Peters Church",
+    "place_of_worship"
+   ],
+   [
+    588,
+    "Dutch Fork School",
+    "school"
+   ],
+   [
+    1908,
+    "Bethlehem Church",
+    "place_of_worship"
+   ]
+  ]
+ },
+ "1812 Augusta Hwy": {
+  "coords": [
+   33.979930720227,
+   -81.276458059619
+  ],
+  "nearest": [
+   {
+    "store": "203 Hwy 378",
+    "straight": 0.72,
+    "drive": 0.94
+   },
+   {
+    "store": "1120 W Main St",
+    "straight": 1.33,
+    "drive": 1.36
+   },
+   {
+    "store": "744 W Main St",
+    "straight": 1.48,
+    "drive": 1.51
+   }
+  ],
+  "sensitive": [
+   [
+    1763,
+    "Calvary Baptist Church",
+    "place_of_worship"
+   ]
+  ]
+ }
+}

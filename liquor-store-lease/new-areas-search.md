@@ -1,5 +1,7 @@
 # Chapin, Irmo, Cayce, Downtown Columbia: 1-Mile Spacing Search
 
+> **Update 2026-09-30:** distances in this file were estimates. See `measured-results.md` for measured distances, which change several verdicts.
+
 Checked 2026-09-30 by web search. Map tools are blocked in this environment, so spacing is **estimated** from address numbers and street layout. Confirm on a map before sending.
 
 ## Existing liquor stores found
